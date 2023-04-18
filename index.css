@@ -1,0 +1,558 @@
+/* General Layout */
+body {
+    font-family: 'Epilogue', sans-serif;
+    color: #172339;
+    
+    
+}
+main{
+    padding: 5px 0 0 0;
+    background-color: #FAF8F6;
+    width: 375px;
+}
+
+
+/* Typography */
+
+h1 {
+    font-size: 2.375rem;
+    font-weight: 300;
+    margin-top: 2em;
+}
+
+
+span{
+    font-weight: 700;
+}
+
+.section-one p{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 3em;
+
+}
+
+h2{
+    font-size: 3em;
+}
+
+h3{
+    color: #FAF8F6;
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin: 3.5em 0 0 0;
+}
+
+h4 {
+    color: #F3EDE7;
+    font-size: 1.125rem;
+    margin-bottom: 0;
+}
+
+
+
+.footer-el p{
+    font-size: 0.9375em;
+}
+
+#location{
+    margin-top: 0;
+    margin-bottom: 3em;
+} 
+
+
+
+
+
+
+
+/* layouts */
+
+.container {
+    width: 93%;
+    margin:0 auto;
+}
+
+
+/* header-layout */
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+}
+    
+.curve{
+    position: absolute;
+    top: -20px;
+    left: 159px;
+    width: 151.47px;
+}
+
+.text {
+    position: relative;
+}
+    
+.header-btn {
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #172339;
+    padding: 1em;
+    cursor: pointer;
+
+}
+
+/* Section-one-layout */
+.phone-img1 {
+    display: block;
+    width: 100%;
+    margin: 4.5em 0 3em 0;
+    
+}
+
+.phone-img2, .phone-img3, .person2, .person1{
+    display: none;
+}
+
+.btn {
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #FAF8F6;
+    padding: 1em 1.125em;
+    background-color: #172339;
+    cursor: pointer;
+    
+}
+
+/* section-two-layout */
+
+.center-align{
+    text-align: center;
+}
+
+.center-align p{
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+.center-align h2{
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+/* Section-three-layout */
+
+
+.card{
+    background-color: #172339;
+    margin-top: 12em;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px; 
+    padding-top: 8em;
+    position: relative;    
+}
+
+.blur-img{
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    width: 60%;
+}
+
+.person {
+    display: block;
+    position: absolute;
+    top: -120%;
+    left: 20%;
+        
+}
+
+
+.section-three {
+    margin-top: 3em;
+    padding-top: 0.5em;
+
+}
+
+.section-three .container, 
+footer .container{
+    width: 100%;
+}
+
+
+.small-curve{
+    position: absolute;
+    top: 260px;
+    left: 160px;
+    width: 49.27px;
+}   
+
+.text-below{
+    background-color: #172339;
+    color: #F3EDE7;
+    text-align: center;
+    padding: 1.75em;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    line-height: 2;
+}   
+
+
+.p-container{
+    width: 101%;
+    line-height: 2;
+    color: #F3EDE7;
+    font-size: 1.125em;  
+}
+
+/* footer layout */
+
+footer {
+    background-color: #F3EDE7;
+    padding-bottom: 5em;
+}
+
+.footer-el{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.logo-below{
+    margin-top: 3.5em;
+}
+.icons{
+    cursor: pointer; 
+    display: flex;
+    gap: 30px;   
+}
+
+
+/* tablet layout */
+
+@media (max-width: 768px) and (min-width: 481px) {
+    /* General Layout */
+    main{
+    width: 768px; 
+
+    }
+    .container {
+        width: 90%;
+        
+    }
+    
+    /* section-one layout */
+    h1{
+        font-size: 3.5rem;
+    }
+    
+    .header-btn{
+        font-weight: 700;
+        font-size: 1rem;
+        color: #172339;
+    }
+    .section-one .container .item-one{
+        display: grid;
+        grid-template: 129px auto/ 350px auto ;
+    } 
+    
+    .section-one .container{
+        margin-top: 4em;
+
+    }
+    
+    .text{
+        grid-row: 1 / 2;
+        grid-column: 1 / 3
+        
+    } 
+    
+    .two{
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+
+        
+    }
+    
+    .two p{
+        margin-top: 0;
+
+    }    
+    
+    .section-one .container{
+        display: grid;
+        grid-template: 482px  / 427px auto;
+    }
+    .item-one{
+        grid-row: 1/ 2;
+        grid-column: 1 /3;
+    }
+    
+    .item-two{
+        grid-column: 2 /3;
+        grid-row: 1/3;
+        
+    }
+ 
+    .phone-img2{
+        display: block;
+        width: 265px;
+        height: 482px;
+     }
+        
+    .curve{
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    width: 35%;
+    }
+    
+    .phone-img1, .phone-img3, .person1, .person2{
+        display: none;
+    }
+    /* section-two layout */
+    .section-two .container{
+        display: flex;
+        justify-content: space-around;
+        margin: 4em auto 5em auto;
+        
+    }
+    
+    
+    h2{
+        margin-top: 0;
+    }
+    
+    .section-two p{
+        margin: 0;
+    }
+    /* section-three layout */
+    
+    
+    
+    .section-three .container,
+    footer .container{
+    width: 90%;
+    }
+    
+    .blur-img{
+        top: -50px;
+        left: 204px;
+        width: 45%;  
+    }
+
+    .person {
+    top: -120%;
+    left: 34%;
+        
+    }
+    
+        
+    h3{
+        margin-top: 3.65em;
+    }
+    
+    .small-curve{
+        top: 230px;
+        left: 320px;
+        margin-top: 2em;
+    }
+    
+    /* footer layout */
+    .footer-el{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5em;
+    }
+    
+    .logo-below{
+        margin-top: 0
+    }
+    
+
+
+}
+
+
+@media(min-width: 769px) and (max-width: 1440px){
+    main{
+    width: 1440px; 
+    position: relative;
+    }
+    .container {
+        width: 80%;
+        
+    }
+    
+     /* section-one layout */
+     
+      
+    .phone-img1, .person1, .person{
+        display: none;
+    }
+    
+    h1{
+        font-size: 4.5rem;
+
+    }
+    
+    .header-btn:hover{
+        font-size: 1.125rem;
+        color: #FAF8F6;
+        background-color: #172339;
+        cursor: pointer;
+    }
+    .section-one .container .item-one{
+        display: grid;
+        grid-template: 129px auto / 350px auto ;
+    } 
+    
+    .section-one .container{
+        margin-top: 4em;
+
+    }
+    
+    .text{
+        grid-row: 1 / 2;
+        grid-column: 1 / 3
+        
+    } 
+    
+    .two{
+        grid-column: 1 / 2;
+        margin-top: 12.5em;
+
+        
+    }
+    .two p{
+        line-height: 2em;
+        margin-bottom: 4em;
+
+    }
+    
+    .two .btn:hover{
+        background-image: linear-gradient(to bottom right, #A060FF, #CB30E3, #FFA84E)
+    }
+    
+    .curve{
+        top: 80px;
+        left: 300px;
+        width: 35%
+    }
+    .section-one .container{
+        display: grid;
+        grid-template: 482px  / 497px auto;
+    }
+    .item-one{
+        grid-row: 1/ 2;
+        grid-column: 1 /3;
+    }
+    
+    .item-two{
+        grid-column: 2 /3;
+        grid-row: 1/3;
+    }
+    
+    .phone-img3{
+        display: block;
+        width: 350px;
+        height: 600px;
+    }
+    
+    .sections-1-2{
+        display: grid;
+        grid-template: 600px / 828px auto;
+        margin-left: 60px
+    }
+    
+    .section-two{
+        margin-top: 6.5em;
+        margin-left: 9.5em;
+
+    }
+    
+    .center-align{
+        text-align: left;
+        margin-top: 4.5em;
+    }
+    
+    h3{
+        font-size: 3rem;
+        margin: 0;
+        position: absolute;
+        top: 980px;
+        left: 830px;
+    }
+    
+    
+    .person2{
+        display: block;
+        position: absolute;
+        top: -50px;
+        left: 150px;
+        width: 375px;
+        height: 600px;
+    }
+    
+    
+    .text-below{
+        text-align: left;
+        padding-left: 48em;
+        
+    }
+    
+    .text-below .p-container{
+        font-size: 1.25rem;
+        margin-left: -80px;
+    }
+    
+    #location{
+        margin-bottom: 28px;
+    }
+    
+    .section-three .container,
+    footer .container{
+        width: 80%;
+    }
+    
+    .blur-img{
+        width: 47%; 
+        left: 50px;
+        top: 100px;
+    }
+    
+    .small-curve{
+    width: 64.05px;
+    height: 52px;  
+    left: 580px;
+    top: 150px; 
+    }
+    
+    /* footer layout */
+    .footer-el{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5em;
+    }
+    
+    .logo-below{
+        margin-top: 0
+    }
+    .icon:hover{
+        opacity: 0.5;
+    }
+}
+
+
+
+
